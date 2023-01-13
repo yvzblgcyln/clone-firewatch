@@ -1,4 +1,4 @@
-# react Firewatch clone app
+# full responsive react firewatch clone app
 
 demo : https://abashed-bananaa.surge.sh/
 original web page: https://www.firewatchgame.com/
