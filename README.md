@@ -1,6 +1,6 @@
 # react Firewatch clone app
 
-demo : https://jazzy-industrry.surge.sh/
+demo : https://abashed-bananaa.surge.sh/
 original web page: https://www.firewatchgame.com/
 
 - pure css and html, no library
