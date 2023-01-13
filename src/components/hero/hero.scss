@@ -1,0 +1,15 @@
+.hero {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  z-index: 99;
+  position: relative;
+  background-color: var(--text-color);
+  img {
+    position: absolute;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+  }
+}

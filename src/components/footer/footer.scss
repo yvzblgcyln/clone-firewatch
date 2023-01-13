@@ -1,0 +1,98 @@
+.footer {
+  font-family: "Nunito", sans-serif;
+  font-family: "PT Serif", serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 960px;
+    img {
+      height: 65px;
+      object-fit: cover;
+    }
+    .texts {
+      margin-top: 50px;
+      max-width: 500px;
+      text-align: center;
+      font-size: 38px;
+      p:last-child {
+        color: #973700;
+        font-size: 20px;
+      }
+    }
+    .icons {
+      margin-top: 50px;
+      margin-bottom: 25px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      max-width: 900px;
+      gap: 50px;
+      .item-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--hover-color);
+        color: #210002;
+        width: 400px;
+        height: 30px;
+        font-weight: 700;
+        letter-spacing: 3px;
+        position: relative;
+        &:hover {
+          background-color: var(--text-color);
+          cursor: pointer;
+        }
+        .arrow {
+          position: absolute;
+          width: 0;
+          height: 0;
+          border-style: solid;
+          border-width: 20px 8px 20px 0;
+          border-color: transparent var(--background-color);
+          right: -1px;
+        }
+        .rotate {
+          transform: rotate(180deg);
+          left: -1px;
+        }
+      }
+    }
+    .bottom-footer {
+      color: #973700;
+      line-height: 0.8;
+      text-align: center;
+      margin-bottom: 50px;
+      h2 {
+        color: var(--text-color);
+        margin-bottom: 45px;
+        font-size: 26px;
+        cursor: pointer;
+        &:hover {
+          color: white;
+        }
+      }
+      .icons {
+        img {
+          background-color: #973700;
+          &:hover {
+            background-color: var(--text-color);
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1000px) {
+  .icons {
+    flex-direction: column;
+    .tree-icon {
+      display: none;
+    }
+  }
+}

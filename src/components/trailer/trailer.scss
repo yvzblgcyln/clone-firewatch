@@ -1,0 +1,79 @@
+.trailer {
+  font-family: "Nunito", sans-serif;
+  font-family: "PT Serif", serif;
+  background-color: var(--background-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  img {
+    width: 36px;
+  }
+  .available {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 700px;
+    h2 {
+      color: var(--text-color);
+      font-size: 28px;
+      letter-spacing: 10px;
+      font-weight: 100;
+    }
+    .items {
+      display: flex;
+      gap: 50px;
+      .item-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+        background-color: var(--text-color);
+        color: #210002;
+        width: 300px;
+        height: 40px;
+        font-weight: 700;
+        letter-spacing: 3px;
+        position: relative;
+        &:hover {
+          background-color: white;
+          cursor: pointer;
+        }
+        .arrow {
+          position: absolute;
+          width: 0;
+          height: 0;
+          border-style: solid;
+          border-width: 20px 8px 20px 0;
+          border-color: transparent var(--background-color);
+          right: -1px;
+        }
+        .rotate {
+          transform: rotate(180deg);
+          left: -1px;
+        }
+      }
+    }
+    .left,
+    .right {
+      display: flex;
+      flex-direction: column;
+      gap: 45px;
+    }
+  }
+  .youtube-container {
+    padding-top: 100px;
+    display: flex;
+    align-items: center;
+    max-width: 900px;
+    .youtube {
+      width: calc(100vw - 100px);
+      aspect-ratio: 16/9;
+      height: 100%;
+    }
+  }
+}
+@media screen and (max-width: 800px) {
+  .items {
+    flex-direction: column;
+  }
+}

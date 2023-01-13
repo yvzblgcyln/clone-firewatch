@@ -1,0 +1,44 @@
+.navbar {
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--background-color);
+
+  a {
+    padding: 12px 10px;
+  }
+  .link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+      background: var(--hover-color);
+    }
+  }
+  .left {
+    font-size: 18px;
+    font-weight: 900;
+  }
+  .right {
+    font-size: 14px;
+    font-weight: 900;
+    display: flex;
+    div:first-child {
+      background: var(--hover-color);
+    }
+  }
+}
+@media screen and (min-width: 800px) {
+  .link3::before {
+    content: "DEVELOPMENT ";
+  }
+  .link4:last-child::before {
+    content: "QUARTERLY ";
+  }
+}
+@media screen and (max-width: 600px) {
+  .navbar {
+    display: none;
+  }
+}
